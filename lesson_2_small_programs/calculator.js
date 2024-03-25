@@ -7,6 +7,7 @@ function prompt(message) {
 function invalidNumber(number) {
   return number.trimStart() === '' || Number.isNaN(Number(number));
 }
+
 prompt('Welcome to Calculator!');
 
 prompt("What's the first number? ");
@@ -52,3 +53,6 @@ switch (operation) {
 }
 
 prompt(`The result is: ${output}`);
+
+// prompt('Would you like to perform another calculation? (Y/N)');
+// let answer = rlSync.question();
